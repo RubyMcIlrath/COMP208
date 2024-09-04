@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Subject Area</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        :root {
+            --card-width: 650px; /* Default width */
+            --card-height: 650px; /* Default height */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #fd92d6; 
+        }
+        body {
+            background-color: #c0c0c0; 
+        }
+        .card {
+            width: var(--card-width);
+            height: var(--card-height);
+            perspective: 1000px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #fff;
+        }
+        .card-front {
+            background: #333;
+        }
+        .card-back {
+            background: #ff74c5;
+            transform: rotateY(180deg);
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the card area */
+            border-radius: 5px; /* Optional: adds rounded corners to the image */
+        }
+        .card .text-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 24px;
+            background-color: rgb(255, 145, 207); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+            <h1><a href="index.html" id="logo">Ruby McIlrath - Teaching Portfolio</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teaching-philosophy.html">Teaching Philosophy</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="teaching-experience.html">Teaching Experience</a></li>
+                    <li class="current"><a href="skills.html">Skills and Subject Area</a></li>
+                    <li><a href="completed-projects.html">Completed Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Banner Image -->
+        <span class="image featured"><img src="images/bannertop.png" alt="Banner Image" /></span>
+        <!-- Main -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-12">
+                        <div id="content">
+                            <article>
+                                <header>
+                                    <h2>Skills and Subject Area</h2>
+                                </header>
+                                <p>My skill set covers a wide range of subject areas within the Technological and Applied Studies (TAS) department. I use creative teaching methods to keep students interested and help them understand the material deeply. To learn more about the skills I teach, just hover over each image below. Each image links to a description of the skill area, showing how I use my knowledge to make learning effective and engaging.
+
+                                    These skills align with the curriculum set by the New South Wales Education Standards Authority (NESA), ensuring that my teaching meets required standards. By exploring each image, you'll see how my methods help students achieve their learning goals and prepare them for future careers in TAS.
+                                    
+                                    .</p>
+                                <div id="image-gallery">
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/foodtech.jpg" alt="Food Technology">
+                                                <div class="text-overlay">Food Tech</div>
+                                            </div>
+                                            <div class="card-back">
+                                                <p>The study of Food Technology provides students with a broad knowledge of food properties, processing, preparation, nutritional considerations and consumption patterns. It addresses the importance of hygiene and safe working practices and legislation in relation to the production of food. Students develop food-specific skills, which can be applied in a range of contexts enabling students to produce quality food products. The course also provides students with contexts through which to explore the richness, pleasure and variety food adds to life and how it contributes to both vocational and general life experiences. (Food Technology 7–10 | NSW Education Standards, n.d.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/textiles.jpg" alt="Textiles Technology">
+                                                <div class="text-overlay">Textiles</div>
+                                            </div>
+                                            <div class="card-back">
+                                                <p>The study of Textiles Technology provides students with knowledge of the properties, performance and uses of textiles. They explore fabrics, yarns, fibres and colouration. Students examine the historical, cultural and contemporary perspectives on textile design and develop an appreciation of the factors affecting them as textile consumers. Students investigate the work of textile designers and make judgements about the appropriateness of design ideas, the selection of materials and tools, and the quality of textile items. Textile projects allow students to be creative, independent learners and to explore functional and aesthetic aspects of textiles. (Textiles and Design Stage 6 Syllabus (2013) | NSW Education Standards, n.d.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/design tech.jpg" alt="Design Technology">
+                                                <div class="text-overlay">Design Tech</div>
+                                            </div>
+                                            <div class="card-back">
+                                                <p>This course involves the study of design theory and practice, design processes, environmental and social issues, communication, research, technologies, and the manipulation of materials, tools and techniques. It involves hands-on practical activities which develop knowledge and skills in designing and producing. The course involves the development, realisation and documentation of design projects. The Major Design Project and supporting folio requires students to select and apply appropriate design, production and evaluation skills to a product, system or environment that satisfies an identified need or opportunity. (Design and Technology | NSW Education Standards, n.d.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/techman.jpg" alt="Technology Mandatory">
+                                                <div class="text-overlay">Tech Mandatory</div>
+                                            </div>
+                                            <div class="card-back">
+                                                <p>Technology Mandatory engages students in design and production activities as they develop solutions to identified needs and opportunities. Through the practical application of knowledge and understanding, they learn about Agriculture and Food Technologies, Digital Technologies, Engineered Systems and Material Technologies. (Technology Mandatory 7–8 | NSW Education Standards, n.d.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/ict.jpg" alt="Information and Software Technology">
+                                                <div class="text-overlay">ICT</div>
+                                            </div>
+                                            <div class="card-back">
+                                                <p>Information and Software Technology Years 7–10 provides students with the opportunity to develop computational, systems and design thinking skills through the development of practical projects. The course provides students with specialised knowledge of past, current and advancing technologies, data, hardware, software and the roles of people involved in information and software technology. Students explore developments and future directions in the exciting and challenging field of information and software technology. The course fosters an interest in, enjoyment of and encourages critical reflection of information and software technology as an integral part of modern society. (Information and Software Technology Years 7–10 Syllabus (2003) | NSW Education Standards, n.d.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/woodwork.jpg" alt="Woodwork">
+                                                <div class="text-overlay">Woodwork</div>
+                                            </div>
+                                            <div class="card-back">
+                                                <p>This course provides students with the opportunity to develop their knowledge and understanding of a selected industry and its related technologies. Through a process of observing and analysing industry practice and through personal practical experiences, students develop a broad range of skills and knowledge related to the focus area chosen for the course. The course highlights the importance of design, management and production through the production of practical projects. Students select and apply appropriate design, management and production skills in the development of a Major Project and supporting documentation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Image (Bottom) -->
+        <span class="image featured"><img src="images/banner.jpg" alt="Banner Image" /></span>
+    </div>
+</body>
+</html>

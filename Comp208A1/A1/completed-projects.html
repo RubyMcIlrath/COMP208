@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Projects</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            color: #fd92d6; 
+        }
+        body {
+            background-color: #f8ffc5; 
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            width: 650px;
+            height: 650px;
+            perspective: 1000px;
+            margin: 10px;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .card-front {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-back {
+            background-color: #fffcad;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+            <h1><a href="index.html" id="logo">Ruby McIlrath - Teaching Portfolio</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teaching-philosophy.html">Teaching Philosophy</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="teaching-experience.html">Teaching Experience</a></li>
+                    <li><a href="skills.html">Skills and Subject Area</a></li>
+                    <li class="current"><a href="completed-projects.html">Completed Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Banner Image -->
+        <span class="image featured"><img src="images/bannertop.png" alt="Banner Image" /></span>
+
+        <!-- Main -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-12">
+                        <div id="content">
+                            <article>
+                                <header>
+                                    <h2>Completed Projects</h2>
+                                </header>
+                                <p>Throughout my studies and teaching career, I have completed a variety of projects that underscore my dedication to innovative education and effective teaching practices. These projects have honed my skills in project management, allowing me to plan and execute educational initiatives efficiently. I’ve developed curriculum materials and instructional strategies, which have enhanced my ability to create engaging and diverse learning experiences. Hover over each project to see what unit it corresponds with. If you want additional knowledge on the unit of work head over to the ACU webiste which is linked in the 'Education' Section.
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/tech105.png" alt="CAD Study Desk">
+                                            </div>
+                                            <div class="card-back">
+                                                <p><strong>TECH105 – Design Principles</strong><br>Project: CAD Study Desk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/tech108.png" alt="Pyjamas">
+                                            </div>
+                                            <div class="card-back">
+                                                <p><strong>TECH108 – Design in Textiles</strong><br>Project: Pyjamas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/tech104.png" alt="Race Car">
+                                            </div>
+                                            <div class="card-back">
+                                                <p><strong>TECH104 – Product Design</strong><br>Project: Race Car</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/tech211.png" alt="Face Wash Dispenser">
+                                            </div>
+                                            <div class="card-back">
+                                                <p><strong>TECH211 - Electromechanical Technologies</strong><br>Project: Face Wash Dispenser</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/tech213.png" alt="Fruit Yogurt Bars">
+                                            </div>
+                                            <div class="card-back">
+                                                <p><strong>TECH213 - Food Industries</strong><br>Project: Fruit Yogurt Bars using Silicone Moulds</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <div class="card-front">
+                                                <img src="images/TECH209.png" alt="Petit Quilts">
+                                            </div>
+                                            <div class="card-back">
+                                                <p><strong>TECH209 - Textile Industries</strong><br>Project: Petit Quilts</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Image (Bottom) -->
+        <span class="image featured"><img src="images/banner.jpg" alt="Banner Image" /></span>
+    </div>
+</body>
+</html>
+

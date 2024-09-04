@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            color: #fd92d6; 
+        }
+        body {
+            background-color: #c0c0c0; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        #page-wrapper {
+            flex: 1;
+        }
+        #sidebar {
+            background-color: #fff; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 5px;
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #sidebar ul li {
+            margin-bottom: 10px;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: #fd92d6;
+            font-weight: bold;
+        }
+        #sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .image.featured img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+            <h1><a href="index.html" id="logo">Ruby McIlrath - Teaching Portfolio</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="teaching-philosophy.html">Teaching Philosophy</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="teaching-experience.html">Teaching Experience</a></li>
+                    <li><a href="skills.html">Skills and Subject Area</a></li>
+                    <li><a href="completed-projects.html">Completed Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Banner Image (Top) -->
+        <span class="image featured"><img src="images/bannertop.png" alt="Banner Image" /></span>
+
+        <!-- Main Content -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-8">
+                        <div id="content">
+                            <article>
+                                <header>
+                                    <h2>Welcome to My Teaching Portfolio</h2>
+                                </header>
+                                <p>Welcome to my teaching portfolio! I'm a committed teacher who is enthusiastic about encouraging students' critical thinking and creativity. My educational background, teaching philosophy, and classroom experiences are all displayed in my portfolio. Please have a look at my journey and discover more about my pedagogical philosophy.</p>
+                                <p>Feel free to use the above links to locate any information you need! Reach out to me with any questions or opportunities for collaboration. 
+                                    You can contact me at Ruby McIlrath, S00333875@myacu.edu.au.</p>
+                                    <img src="images/me.jpeg" style="width:100%; height:auto; border-radius:5px;">
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <!-- Sidebar -->
+                        <aside id="sidebar">
+                            <h3>Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="teaching-philosophy.html">Teaching Philosophy</a></li>
+                                <li><a href="education.html">Education</a></li>
+                                <li><a href="teaching-experience.html">Teaching Experience</a></li>
+                                <li><a href="skills.html">Skills and Subject Area</a></li>
+                                <li><a href="completed-projects.html">Completed Projects</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Image (Bottom) -->
+        <span class="image featured"><img src="images/banner.jpg" alt="Banner Image" /></span>
+    </div>
+</body>
+</html>
